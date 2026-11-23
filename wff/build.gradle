@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.clusterrr.hexeditorwatchface.wff'
+    compileSdk 37
+    buildToolsVersion '37.0.0'
+
+    defaultConfig {
+        applicationId "com.clusterrr.hexeditorwatchface.wff"
+        minSdk 33
+        targetSdk 37
+        versionCode 30
+        versionName "3.0-wff"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+}
