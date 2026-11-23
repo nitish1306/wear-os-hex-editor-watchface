@@ -32,25 +32,29 @@ for ($x=-4;$x -le 4;$x++){ for($y=-5;$y -le 5;$y++){
 
 # One byte tile showing a decimal pair (00..99) via BCD-encoded dXX image.
 function ByteSlot {
-  param([int]$left,[int]$top,[string]$pairExpr,[int]$lo,[int]$hi,[string]$res,[bool]$ambient)
-  $px=240+($left-1)*$numW; $py=240+$top*$numVInt-24
+  param([int]$left,[int]$top,[string]$pairExpr,[int]$lo,[int]$hi,[string]$res,[bool]$ambient,[int]$dx=0,[int]$dy=0,[string]$indent='    ')
+  $px=240+($left-1)*$numW+$dx; $py=240+$top*$numVInt-24+$dy
   $pe = X $pairExpr
   for ($p=$lo;$p -le $hi;$p++){
     $bcd = [int]([math]::Floor($p/10)*16 + ($p%10))
     $hex = "{0:x2}" -f $bcd
-    L "    <PartImage x=""$px"" y=""$py"" width=""$numW"" height=""$numH"">"
-    L "      <Transform target=""alpha"" value=""$pe == $p ? 255 : 0"" />"
-    if ($ambient) { L "      <Variant mode=""AMBIENT"" target=""alpha"" value=""$pe == $p ? 255 : 0"" />" }
-    else { L '      <Variant mode="AMBIENT" target="alpha" value="0" />' }
-    L "      <Image resource=""d${hex}_$res"" />"
-    L '    </PartImage>'
+    L "$indent<PartImage x=""$px"" y=""$py"" width=""$numW"" height=""$numH"">"
+    L "$indent  <Transform target=""alpha"" value=""$pe == $p ? 255 : 0"" />"
+    if ($ambient) { L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""$pe == $p ? 255 : 0"" />" }
+    else { L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""0"" />" }
+    L "$indent  <Image resource=""d${hex}_$res"" />"
+    L "$indent</PartImage>"
   }
 }
 
-# TIME (decimal HH MM SS)
-ByteSlot -left 0 -top 0 -pairExpr '[HOUR_0_23]' -lo 0 -hi 23 -res $time -ambient $true
-ByteSlot -left 1 -top 0 -pairExpr '[MINUTE]' -lo 0 -hi 59 -res $time -ambient $true
-ByteSlot -left 2 -top 0 -pairExpr '[SECOND]' -lo 0 -hi 59 -res $accent -ambient $false
+# TIME (decimal HH MM SS) — wrapped in a gyro-warped group
+$warp = 'clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)'
+L '    <Group name="time_warp" x="162" y="216" width="234" height="46" pivotX="0.5" pivotY="0.5">'
+L "      <Gyro x=""clamp([ACCELEROMETER_ANGLE_Y] * 0.10, -10, 10) * $warp"" y=""clamp([ACCELEROMETER_ANGLE_X] * 0.06, -6, 6) * $warp"" angle=""clamp([ACCELEROMETER_ANGLE_Z] * 0.05, -4, 4) * $warp"" scaleX=""1 + 0.30 * $warp"" scaleY=""1 + 0.18 * $warp"" />"
+ByteSlot -left 0 -top 0 -pairExpr '[HOUR_0_23]' -lo 0 -hi 23 -res $time -ambient $true -dx -162 -dy -216 -indent '      '
+ByteSlot -left 1 -top 0 -pairExpr '[MINUTE]' -lo 0 -hi 59 -res $time -ambient $true -dx -162 -dy -216 -indent '      '
+ByteSlot -left 2 -top 0 -pairExpr '[SECOND]' -lo 0 -hi 59 -res $accent -ambient $false -dx -162 -dy -216 -indent '      '
+L '    </Group>'
 # DATE (YY MM DD + day-of-week)
 ByteSlot -left 1 -top -1 -pairExpr '([YEAR] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 ByteSlot -left 2 -top -1 -pairExpr '[MONTH]' -lo 1 -hi 12 -res $accent -ambient $false

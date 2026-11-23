@@ -88,726 +88,729 @@
     <PartImage x="474" y="384" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_cyan" /></PartImage>
     <PartImage x="474" y="440" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_cyan" /></PartImage>
     <PartImage x="474" y="496" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_cyan" /></PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 0 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 0 ? 255 : 0" />
-      <Image resource="d00_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 1 ? 255 : 0" />
-      <Image resource="d01_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 2 ? 255 : 0" />
-      <Image resource="d02_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 3 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 3 ? 255 : 0" />
-      <Image resource="d03_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 4 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 4 ? 255 : 0" />
-      <Image resource="d04_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 5 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 5 ? 255 : 0" />
-      <Image resource="d05_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 6 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 6 ? 255 : 0" />
-      <Image resource="d06_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 7 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 7 ? 255 : 0" />
-      <Image resource="d07_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 8 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 8 ? 255 : 0" />
-      <Image resource="d08_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 9 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 9 ? 255 : 0" />
-      <Image resource="d09_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 10 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 10 ? 255 : 0" />
-      <Image resource="d10_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 11 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 11 ? 255 : 0" />
-      <Image resource="d11_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 12 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 12 ? 255 : 0" />
-      <Image resource="d12_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 13 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 13 ? 255 : 0" />
-      <Image resource="d13_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 14 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 14 ? 255 : 0" />
-      <Image resource="d14_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 15 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 15 ? 255 : 0" />
-      <Image resource="d15_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 16 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 16 ? 255 : 0" />
-      <Image resource="d16_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 17 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 17 ? 255 : 0" />
-      <Image resource="d17_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 18 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 18 ? 255 : 0" />
-      <Image resource="d18_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 19 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 19 ? 255 : 0" />
-      <Image resource="d19_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 20 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 20 ? 255 : 0" />
-      <Image resource="d20_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 21 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 21 ? 255 : 0" />
-      <Image resource="d21_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 22 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 22 ? 255 : 0" />
-      <Image resource="d22_time" />
-    </PartImage>
-    <PartImage x="162" y="216" width="78" height="46">
-      <Transform target="alpha" value="[HOUR_0_23] == 23 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 23 ? 255 : 0" />
-      <Image resource="d23_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 0 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 0 ? 255 : 0" />
-      <Image resource="d00_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 1 ? 255 : 0" />
-      <Image resource="d01_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 2 ? 255 : 0" />
-      <Image resource="d02_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 3 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 3 ? 255 : 0" />
-      <Image resource="d03_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 4 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 4 ? 255 : 0" />
-      <Image resource="d04_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 5 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 5 ? 255 : 0" />
-      <Image resource="d05_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 6 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 6 ? 255 : 0" />
-      <Image resource="d06_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 7 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 7 ? 255 : 0" />
-      <Image resource="d07_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 8 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 8 ? 255 : 0" />
-      <Image resource="d08_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 9 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 9 ? 255 : 0" />
-      <Image resource="d09_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 10 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 10 ? 255 : 0" />
-      <Image resource="d10_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 11 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 11 ? 255 : 0" />
-      <Image resource="d11_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 12 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 12 ? 255 : 0" />
-      <Image resource="d12_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 13 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 13 ? 255 : 0" />
-      <Image resource="d13_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 14 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 14 ? 255 : 0" />
-      <Image resource="d14_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 15 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 15 ? 255 : 0" />
-      <Image resource="d15_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 16 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 16 ? 255 : 0" />
-      <Image resource="d16_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 17 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 17 ? 255 : 0" />
-      <Image resource="d17_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 18 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 18 ? 255 : 0" />
-      <Image resource="d18_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 19 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 19 ? 255 : 0" />
-      <Image resource="d19_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 20 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 20 ? 255 : 0" />
-      <Image resource="d20_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 21 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 21 ? 255 : 0" />
-      <Image resource="d21_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 22 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 22 ? 255 : 0" />
-      <Image resource="d22_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 23 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 23 ? 255 : 0" />
-      <Image resource="d23_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 24 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 24 ? 255 : 0" />
-      <Image resource="d24_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 25 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 25 ? 255 : 0" />
-      <Image resource="d25_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 26 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 26 ? 255 : 0" />
-      <Image resource="d26_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 27 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 27 ? 255 : 0" />
-      <Image resource="d27_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 28 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 28 ? 255 : 0" />
-      <Image resource="d28_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 29 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 29 ? 255 : 0" />
-      <Image resource="d29_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 30 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 30 ? 255 : 0" />
-      <Image resource="d30_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 31 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 31 ? 255 : 0" />
-      <Image resource="d31_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 32 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 32 ? 255 : 0" />
-      <Image resource="d32_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 33 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 33 ? 255 : 0" />
-      <Image resource="d33_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 34 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 34 ? 255 : 0" />
-      <Image resource="d34_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 35 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 35 ? 255 : 0" />
-      <Image resource="d35_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 36 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 36 ? 255 : 0" />
-      <Image resource="d36_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 37 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 37 ? 255 : 0" />
-      <Image resource="d37_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 38 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 38 ? 255 : 0" />
-      <Image resource="d38_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 39 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 39 ? 255 : 0" />
-      <Image resource="d39_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 40 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 40 ? 255 : 0" />
-      <Image resource="d40_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 41 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 41 ? 255 : 0" />
-      <Image resource="d41_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 42 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 42 ? 255 : 0" />
-      <Image resource="d42_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 43 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 43 ? 255 : 0" />
-      <Image resource="d43_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 44 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 44 ? 255 : 0" />
-      <Image resource="d44_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 45 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 45 ? 255 : 0" />
-      <Image resource="d45_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 46 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 46 ? 255 : 0" />
-      <Image resource="d46_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 47 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 47 ? 255 : 0" />
-      <Image resource="d47_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 48 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 48 ? 255 : 0" />
-      <Image resource="d48_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 49 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 49 ? 255 : 0" />
-      <Image resource="d49_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 50 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 50 ? 255 : 0" />
-      <Image resource="d50_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 51 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 51 ? 255 : 0" />
-      <Image resource="d51_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 52 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 52 ? 255 : 0" />
-      <Image resource="d52_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 53 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 53 ? 255 : 0" />
-      <Image resource="d53_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 54 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 54 ? 255 : 0" />
-      <Image resource="d54_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 55 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 55 ? 255 : 0" />
-      <Image resource="d55_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 56 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 56 ? 255 : 0" />
-      <Image resource="d56_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 57 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 57 ? 255 : 0" />
-      <Image resource="d57_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 58 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 58 ? 255 : 0" />
-      <Image resource="d58_time" />
-    </PartImage>
-    <PartImage x="240" y="216" width="78" height="46">
-      <Transform target="alpha" value="[MINUTE] == 59 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 59 ? 255 : 0" />
-      <Image resource="d59_time" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 0 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d00_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d01_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d02_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 3 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d03_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 4 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d04_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 5 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d05_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 6 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d06_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 7 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d07_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 8 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d08_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 9 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d09_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 10 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d10_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 11 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d11_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 12 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d12_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 13 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d13_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 14 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d14_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 15 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d15_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 16 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d16_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 17 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d17_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 18 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d18_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 19 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d19_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 20 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d20_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 21 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d21_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 22 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d22_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 23 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d23_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 24 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d24_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 25 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d25_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 26 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d26_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 27 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d27_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 28 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d28_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 29 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d29_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 30 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d30_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 31 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d31_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 32 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d32_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 33 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d33_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 34 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d34_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 35 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d35_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 36 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d36_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 37 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d37_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 38 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d38_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 39 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d39_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 40 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d40_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 41 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d41_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 42 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d42_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 43 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d43_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 44 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d44_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 45 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d45_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 46 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d46_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 47 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d47_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 48 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d48_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 49 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d49_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 50 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d50_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 51 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d51_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 52 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d52_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 53 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d53_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 54 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d54_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 55 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d55_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 56 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d56_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 57 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d57_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 58 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d58_cyan" />
-    </PartImage>
-    <PartImage x="318" y="216" width="78" height="46">
-      <Transform target="alpha" value="[SECOND] == 59 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d59_cyan" />
-    </PartImage>
+    <Group name="time_warp" x="162" y="216" width="234" height="46" pivotX="0.5" pivotY="0.5">
+      <Gyro x="clamp([ACCELEROMETER_ANGLE_Y] * 0.10, -10, 10) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" y="clamp([ACCELEROMETER_ANGLE_X] * 0.06, -6, 6) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" angle="clamp([ACCELEROMETER_ANGLE_Z] * 0.05, -4, 4) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" scaleX="1 + 0.30 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" scaleY="1 + 0.18 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" />
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 0 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 0 ? 255 : 0" />
+        <Image resource="d00_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 1 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 1 ? 255 : 0" />
+        <Image resource="d01_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 2 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 2 ? 255 : 0" />
+        <Image resource="d02_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 3 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 3 ? 255 : 0" />
+        <Image resource="d03_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 4 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 4 ? 255 : 0" />
+        <Image resource="d04_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 5 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 5 ? 255 : 0" />
+        <Image resource="d05_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 6 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 6 ? 255 : 0" />
+        <Image resource="d06_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 7 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 7 ? 255 : 0" />
+        <Image resource="d07_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 8 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 8 ? 255 : 0" />
+        <Image resource="d08_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 9 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 9 ? 255 : 0" />
+        <Image resource="d09_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 10 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 10 ? 255 : 0" />
+        <Image resource="d10_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 11 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 11 ? 255 : 0" />
+        <Image resource="d11_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 12 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 12 ? 255 : 0" />
+        <Image resource="d12_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 13 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 13 ? 255 : 0" />
+        <Image resource="d13_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 14 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 14 ? 255 : 0" />
+        <Image resource="d14_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 15 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 15 ? 255 : 0" />
+        <Image resource="d15_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 16 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 16 ? 255 : 0" />
+        <Image resource="d16_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 17 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 17 ? 255 : 0" />
+        <Image resource="d17_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 18 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 18 ? 255 : 0" />
+        <Image resource="d18_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 19 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 19 ? 255 : 0" />
+        <Image resource="d19_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 20 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 20 ? 255 : 0" />
+        <Image resource="d20_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 21 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 21 ? 255 : 0" />
+        <Image resource="d21_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 22 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 22 ? 255 : 0" />
+        <Image resource="d22_time" />
+      </PartImage>
+      <PartImage x="0" y="0" width="78" height="46">
+        <Transform target="alpha" value="[HOUR_0_23] == 23 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[HOUR_0_23] == 23 ? 255 : 0" />
+        <Image resource="d23_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 0 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 0 ? 255 : 0" />
+        <Image resource="d00_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 1 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 1 ? 255 : 0" />
+        <Image resource="d01_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 2 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 2 ? 255 : 0" />
+        <Image resource="d02_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 3 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 3 ? 255 : 0" />
+        <Image resource="d03_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 4 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 4 ? 255 : 0" />
+        <Image resource="d04_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 5 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 5 ? 255 : 0" />
+        <Image resource="d05_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 6 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 6 ? 255 : 0" />
+        <Image resource="d06_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 7 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 7 ? 255 : 0" />
+        <Image resource="d07_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 8 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 8 ? 255 : 0" />
+        <Image resource="d08_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 9 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 9 ? 255 : 0" />
+        <Image resource="d09_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 10 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 10 ? 255 : 0" />
+        <Image resource="d10_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 11 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 11 ? 255 : 0" />
+        <Image resource="d11_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 12 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 12 ? 255 : 0" />
+        <Image resource="d12_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 13 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 13 ? 255 : 0" />
+        <Image resource="d13_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 14 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 14 ? 255 : 0" />
+        <Image resource="d14_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 15 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 15 ? 255 : 0" />
+        <Image resource="d15_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 16 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 16 ? 255 : 0" />
+        <Image resource="d16_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 17 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 17 ? 255 : 0" />
+        <Image resource="d17_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 18 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 18 ? 255 : 0" />
+        <Image resource="d18_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 19 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 19 ? 255 : 0" />
+        <Image resource="d19_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 20 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 20 ? 255 : 0" />
+        <Image resource="d20_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 21 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 21 ? 255 : 0" />
+        <Image resource="d21_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 22 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 22 ? 255 : 0" />
+        <Image resource="d22_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 23 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 23 ? 255 : 0" />
+        <Image resource="d23_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 24 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 24 ? 255 : 0" />
+        <Image resource="d24_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 25 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 25 ? 255 : 0" />
+        <Image resource="d25_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 26 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 26 ? 255 : 0" />
+        <Image resource="d26_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 27 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 27 ? 255 : 0" />
+        <Image resource="d27_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 28 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 28 ? 255 : 0" />
+        <Image resource="d28_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 29 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 29 ? 255 : 0" />
+        <Image resource="d29_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 30 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 30 ? 255 : 0" />
+        <Image resource="d30_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 31 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 31 ? 255 : 0" />
+        <Image resource="d31_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 32 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 32 ? 255 : 0" />
+        <Image resource="d32_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 33 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 33 ? 255 : 0" />
+        <Image resource="d33_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 34 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 34 ? 255 : 0" />
+        <Image resource="d34_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 35 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 35 ? 255 : 0" />
+        <Image resource="d35_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 36 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 36 ? 255 : 0" />
+        <Image resource="d36_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 37 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 37 ? 255 : 0" />
+        <Image resource="d37_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 38 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 38 ? 255 : 0" />
+        <Image resource="d38_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 39 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 39 ? 255 : 0" />
+        <Image resource="d39_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 40 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 40 ? 255 : 0" />
+        <Image resource="d40_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 41 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 41 ? 255 : 0" />
+        <Image resource="d41_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 42 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 42 ? 255 : 0" />
+        <Image resource="d42_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 43 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 43 ? 255 : 0" />
+        <Image resource="d43_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 44 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 44 ? 255 : 0" />
+        <Image resource="d44_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 45 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 45 ? 255 : 0" />
+        <Image resource="d45_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 46 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 46 ? 255 : 0" />
+        <Image resource="d46_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 47 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 47 ? 255 : 0" />
+        <Image resource="d47_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 48 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 48 ? 255 : 0" />
+        <Image resource="d48_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 49 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 49 ? 255 : 0" />
+        <Image resource="d49_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 50 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 50 ? 255 : 0" />
+        <Image resource="d50_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 51 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 51 ? 255 : 0" />
+        <Image resource="d51_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 52 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 52 ? 255 : 0" />
+        <Image resource="d52_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 53 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 53 ? 255 : 0" />
+        <Image resource="d53_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 54 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 54 ? 255 : 0" />
+        <Image resource="d54_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 55 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 55 ? 255 : 0" />
+        <Image resource="d55_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 56 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 56 ? 255 : 0" />
+        <Image resource="d56_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 57 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 57 ? 255 : 0" />
+        <Image resource="d57_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 58 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 58 ? 255 : 0" />
+        <Image resource="d58_time" />
+      </PartImage>
+      <PartImage x="78" y="0" width="78" height="46">
+        <Transform target="alpha" value="[MINUTE] == 59 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="[MINUTE] == 59 ? 255 : 0" />
+        <Image resource="d59_time" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 0 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d00_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 1 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d01_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 2 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d02_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 3 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d03_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 4 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d04_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 5 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d05_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 6 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d06_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 7 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d07_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 8 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d08_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 9 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d09_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 10 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d10_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 11 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d11_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 12 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d12_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 13 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d13_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 14 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d14_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 15 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d15_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 16 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d16_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 17 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d17_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 18 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d18_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 19 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d19_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 20 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d20_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 21 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d21_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 22 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d22_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 23 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d23_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 24 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d24_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 25 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d25_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 26 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d26_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 27 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d27_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 28 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d28_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 29 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d29_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 30 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d30_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 31 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d31_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 32 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d32_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 33 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d33_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 34 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d34_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 35 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d35_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 36 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d36_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 37 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d37_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 38 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d38_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 39 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d39_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 40 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d40_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 41 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d41_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 42 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d42_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 43 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d43_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 44 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d44_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 45 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d45_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 46 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d46_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 47 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d47_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 48 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d48_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 49 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d49_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 50 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d50_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 51 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d51_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 52 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d52_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 53 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d53_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 54 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d54_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 55 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d55_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 56 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d56_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 57 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d57_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 58 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d58_cyan" />
+      </PartImage>
+      <PartImage x="156" y="0" width="78" height="46">
+        <Transform target="alpha" value="[SECOND] == 59 ? 255 : 0" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+        <Image resource="d59_cyan" />
+      </PartImage>
+    </Group>
     <PartImage x="240" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 0 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
