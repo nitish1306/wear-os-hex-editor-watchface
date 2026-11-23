@@ -3,6 +3,11 @@
   <Scene backgroundColor="#FF000000">
     <PartImage x="-60" y="-60" width="600" height="600"><Image resource="bg_green" /></PartImage>
     <PartImage x="-60" y="-114" width="600" height="600"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="bars_green" /></PartImage>
+    <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">
+      <Transform target="scaleX" value="1.15 + 0.40 * clamp(([ACCELEROMETER_Z] - 3.5) / 6, 0, 1) * clamp((abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8) - 1.2) / 3, 0, 1) - 0.12 * clamp((-[ACCELEROMETER_Z] - 3.5) / 6, 0, 1) * clamp((abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8) - 1.2) / 3, 0, 1)"><Animation duration="0.7" interpolation="EASE_IN_OUT" fps="30" /></Transform>
+      <Transform target="scaleY" value="1.15 + 0.28 * clamp(([ACCELEROMETER_Z] - 3.5) / 6, 0, 1) * clamp((abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8) - 1.2) / 3, 0, 1) - 0.08 * clamp((-[ACCELEROMETER_Z] - 3.5) / 6, 0, 1) * clamp((abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8) - 1.2) / 3, 0, 1)"><Animation duration="0.7" interpolation="EASE_IN_OUT" fps="30" /></Transform>
+    <PartImage x="-60" y="-60" width="600" height="600"><Image resource="bg_green" /></PartImage>
+    <PartImage x="-60" y="-114" width="600" height="600"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="bars_green" /></PartImage>
     <PartImage x="-150" y="-64" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-150" y="-8" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-150" y="48" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
@@ -20,6 +25,7 @@
     <PartImage x="-72" y="104" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-72" y="160" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-72" y="216" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
+    <PartImage x="-72" y="272" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-72" y="328" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-72" y="384" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="-72" y="440" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
@@ -28,6 +34,7 @@
     <PartImage x="6" y="-8" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="6" y="48" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="6" y="104" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
+    <PartImage x="6" y="160" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="6" y="328" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="6" y="384" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="6" y="440" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
@@ -44,8 +51,6 @@
     <PartImage x="162" y="-8" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="162" y="48" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="162" y="104" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
-    <PartImage x="162" y="160" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
-    <PartImage x="162" y="272" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="162" y="328" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="162" y="384" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
     <PartImage x="162" y="440" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>
@@ -809,1266 +814,1236 @@
       <Image resource="d59_green" />
     </PartImage>
     <PartImage x="240" y="160" width="78" height="46">
+      <Transform target="alpha" value="0 == 0 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d00_green" />
+    </PartImage>
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 0 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d00_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 10 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d10_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 11 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d11_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 12 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d12_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 13 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d13_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 14 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d14_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 15 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d15_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 16 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d16_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 17 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d17_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 18 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d18_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 19 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d19_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 20 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d20_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 21 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d21_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 22 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d22_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 23 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d23_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 24 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d24_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 25 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d25_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 26 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d26_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 27 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d27_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 28 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d28_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 29 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d29_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 30 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d30_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 31 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d31_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 32 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d32_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 33 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d33_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 34 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d34_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 35 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d35_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 36 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d36_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 37 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d37_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 38 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d38_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 39 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d39_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 40 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d40_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 41 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d41_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 42 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d42_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 43 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d43_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 44 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d44_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 45 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d45_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 46 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d46_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 47 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d47_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 48 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d48_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 49 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d49_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 50 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d50_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 51 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d51_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 52 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d52_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 53 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d53_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 54 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d54_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 55 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d55_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 56 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d56_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 57 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d57_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 58 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d58_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 59 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d59_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 60 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d60_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 61 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d61_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 62 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d62_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 63 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d63_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 64 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d64_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 65 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d65_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 66 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d66_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 67 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d67_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 68 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d68_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 69 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d69_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 70 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d70_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 71 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d71_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 72 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d72_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 73 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d73_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 74 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d74_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 75 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d75_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 76 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d76_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 77 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d77_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 78 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d78_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 79 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d79_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 80 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d80_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 81 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d81_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 82 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d82_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 83 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d83_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 84 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d84_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 85 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d85_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 86 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d86_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 87 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d87_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 88 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d88_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 89 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d89_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 90 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d90_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 91 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d91_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 92 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d92_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 93 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d93_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 94 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d94_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 95 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d95_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 96 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d96_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 97 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d97_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 98 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d98_green" />
     </PartImage>
-    <PartImage x="240" y="160" width="78" height="46">
+    <PartImage x="318" y="160" width="78" height="46">
       <Transform target="alpha" value="([YEAR] % 100) == 99 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d99_green" />
     </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d01_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d02_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 3 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d03_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 4 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d04_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 5 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d05_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 6 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d06_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 7 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d07_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 8 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d08_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 9 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d09_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 10 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d10_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 11 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d11_green" />
-    </PartImage>
-    <PartImage x="318" y="160" width="78" height="46">
-      <Transform target="alpha" value="[MONTH] == 12 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d12_green" />
-    </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 10 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d10_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 11 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d11_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 12 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d12_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 13 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d13_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 14 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d14_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 15 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d15_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 16 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d16_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 17 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d17_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 18 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d18_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 19 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d19_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 20 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d20_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 21 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d21_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 22 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d22_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 23 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d23_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 24 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d24_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 25 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d25_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 26 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d26_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 27 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d27_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 28 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d28_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 29 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d29_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 30 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d30_green" />
     </PartImage>
-    <PartImage x="318" y="272" width="78" height="46">
+    <PartImage x="240" y="272" width="78" height="46">
       <Transform target="alpha" value="[DAY] == 31 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d31_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 1 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 2 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 3 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 4 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 5 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 6 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="240" y="272" width="78" height="46">
-      <Transform target="alpha" value="[DAY_OF_WEEK] == 7 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="6" y="160" width="78" height="46">
-      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 0 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d00_green" />
-    </PartImage>
-    <PartImage x="6" y="160" width="78" height="46">
-      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d01_green" />
-    </PartImage>
-    <PartImage x="6" y="160" width="78" height="46">
-      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d02_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 0 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d00_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 1 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d01_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 2 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d02_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 3 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d03_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 4 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d04_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 5 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d05_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 6 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d06_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 7 ? 255 : 0" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Image resource="d07_green" />
-    </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 8 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 9 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 10 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 10 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d10_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 11 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 11 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d11_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
-      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 12 ? 255 : 0" />
+    <PartImage x="318" y="272" width="78" height="46">
+      <Transform target="alpha" value="[MONTH] == 12 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d12_green" />
     </PartImage>
     <PartImage x="84" y="160" width="78" height="46">
+      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 0 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d00_green" />
+    </PartImage>
+    <PartImage x="84" y="160" width="78" height="46">
+      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 1 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d01_green" />
+    </PartImage>
+    <PartImage x="84" y="160" width="78" height="46">
+      <Transform target="alpha" value="floor(round([HEART_RATE]) / 100) == 2 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d02_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 0 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d00_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 1 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d01_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 2 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d02_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 3 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d03_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 4 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d04_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 5 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d05_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 6 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d06_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 7 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d07_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 8 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d08_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 9 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d09_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 10 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d10_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 11 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d11_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
+      <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 12 ? 255 : 0" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+      <Image resource="d12_green" />
+    </PartImage>
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 13 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d13_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 14 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d14_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 15 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d15_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 16 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d16_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 17 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d17_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 18 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d18_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 19 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d19_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 20 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d20_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 21 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d21_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 22 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d22_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 23 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d23_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 24 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d24_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 25 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d25_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 26 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d26_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 27 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d27_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 28 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d28_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 29 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d29_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 30 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d30_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 31 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d31_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 32 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d32_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 33 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d33_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 34 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d34_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 35 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d35_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 36 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d36_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 37 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d37_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 38 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d38_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 39 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d39_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 40 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d40_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 41 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d41_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 42 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d42_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 43 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d43_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 44 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d44_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 45 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d45_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 46 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d46_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 47 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d47_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 48 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d48_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 49 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d49_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 50 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d50_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 51 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d51_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 52 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d52_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 53 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d53_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 54 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d54_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 55 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d55_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 56 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d56_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 57 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d57_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 58 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d58_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 59 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d59_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 60 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d60_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 61 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d61_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 62 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d62_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 63 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d63_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 64 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d64_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 65 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d65_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 66 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d66_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 67 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d67_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 68 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d68_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 69 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d69_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 70 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d70_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 71 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d71_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 72 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d72_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 73 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d73_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 74 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d74_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 75 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d75_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 76 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d76_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 77 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d77_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 78 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d78_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 79 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d79_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 80 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d80_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 81 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d81_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 82 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d82_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 83 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d83_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 84 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d84_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 85 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d85_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 86 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d86_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 87 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d87_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 88 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d88_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 89 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d89_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 90 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d90_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 91 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d91_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 92 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d92_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 93 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d93_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 94 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d94_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 95 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d95_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 96 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d96_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 97 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d97_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 98 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d98_green" />
     </PartImage>
-    <PartImage x="84" y="160" width="78" height="46">
+    <PartImage x="162" y="160" width="78" height="46">
       <Transform target="alpha" value="(round([HEART_RATE]) % 100) == 99 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d99_green" />
@@ -2583,1056 +2558,1058 @@
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d99_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 0 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d00_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="-72" y="272" width="78" height="46">
+    <PartImage x="6" y="272" width="78" height="46">
       <Transform target="alpha" value="floor([STEP_COUNT] / 10000) == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 0 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d00_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 10 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d10_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 11 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d11_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 12 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d12_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 13 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d13_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 14 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d14_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 15 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d15_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 16 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d16_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 17 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d17_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 18 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d18_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 19 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d19_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 20 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d20_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 21 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d21_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 22 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d22_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 23 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d23_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 24 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d24_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 25 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d25_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 26 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d26_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 27 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d27_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 28 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d28_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 29 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d29_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 30 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d30_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 31 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d31_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 32 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d32_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 33 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d33_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 34 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d34_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 35 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d35_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 36 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d36_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 37 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d37_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 38 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d38_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 39 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d39_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 40 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d40_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 41 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d41_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 42 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d42_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 43 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d43_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 44 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d44_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 45 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d45_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 46 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d46_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 47 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d47_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 48 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d48_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 49 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d49_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 50 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d50_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 51 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d51_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 52 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d52_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 53 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d53_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 54 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d54_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 55 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d55_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 56 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d56_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 57 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d57_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 58 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d58_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 59 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d59_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 60 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d60_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 61 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d61_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 62 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d62_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 63 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d63_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 64 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d64_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 65 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d65_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 66 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d66_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 67 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d67_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 68 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d68_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 69 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d69_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 70 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d70_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 71 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d71_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 72 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d72_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 73 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d73_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 74 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d74_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 75 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d75_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 76 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d76_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 77 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d77_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 78 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d78_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 79 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d79_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 80 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d80_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 81 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d81_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 82 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d82_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 83 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d83_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 84 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d84_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 85 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d85_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 86 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d86_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 87 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d87_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 88 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d88_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 89 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d89_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 90 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d90_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 91 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d91_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 92 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d92_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 93 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d93_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 94 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d94_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 95 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d95_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 96 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d96_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 97 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d97_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 98 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d98_green" />
     </PartImage>
-    <PartImage x="6" y="272" width="78" height="46">
+    <PartImage x="84" y="272" width="78" height="46">
       <Transform target="alpha" value="(floor([STEP_COUNT] / 100) % 100) == 99 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d99_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 0 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d00_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 1 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d01_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 2 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d02_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 3 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d03_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 4 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d04_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 5 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d05_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 6 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d06_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 7 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d07_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 8 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d08_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 9 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d09_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 10 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d10_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 11 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d11_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 12 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d12_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 13 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d13_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 14 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d14_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 15 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d15_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 16 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d16_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 17 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d17_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 18 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d18_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 19 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d19_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 20 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d20_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 21 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d21_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 22 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d22_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 23 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d23_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 24 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d24_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 25 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d25_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 26 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d26_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 27 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d27_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 28 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d28_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 29 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d29_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 30 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d30_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 31 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d31_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 32 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d32_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 33 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d33_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 34 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d34_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 35 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d35_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 36 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d36_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 37 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d37_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 38 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d38_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 39 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d39_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 40 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d40_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 41 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d41_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 42 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d42_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 43 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d43_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 44 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d44_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 45 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d45_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 46 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d46_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 47 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d47_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 48 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d48_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 49 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d49_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 50 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d50_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 51 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d51_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 52 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d52_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 53 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d53_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 54 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d54_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 55 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d55_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 56 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d56_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 57 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d57_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 58 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d58_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 59 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d59_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 60 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d60_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 61 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d61_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 62 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d62_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 63 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d63_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 64 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d64_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 65 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d65_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 66 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d66_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 67 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d67_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 68 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d68_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 69 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d69_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 70 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d70_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 71 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d71_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 72 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d72_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 73 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d73_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 74 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d74_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 75 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d75_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 76 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d76_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 77 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d77_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 78 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d78_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 79 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d79_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 80 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d80_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 81 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d81_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 82 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d82_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 83 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d83_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 84 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d84_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 85 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d85_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 86 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d86_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 87 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d87_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 88 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d88_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 89 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d89_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 90 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d90_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 91 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d91_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 92 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d92_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 93 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d93_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 94 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d94_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 95 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d95_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 96 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d96_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 97 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d97_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 98 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d98_green" />
     </PartImage>
-    <PartImage x="84" y="272" width="78" height="46">
+    <PartImage x="162" y="272" width="78" height="46">
       <Transform target="alpha" value="([STEP_COUNT] % 100) == 99 ? 255 : 0" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
       <Image resource="d99_green" />
     </PartImage>
+    </Group>
     <PartImage x="-10" y="-10" width="500" height="500"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="vignetting_strong" /></PartImage>
+    <PartImage x="-10" y="-10" width="500" height="500"><Transform target="alpha" value="255 * clamp((-[ACCELEROMETER_Z] - 3.5) / 6, 0, 1) * clamp((abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8) - 1.2) / 3, 0, 1)"><Animation duration="0.7" interpolation="EASE_IN_OUT" fps="30" /></Transform><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="vignetting_strong" /></PartImage>
   </Scene>
 </WatchFace>
