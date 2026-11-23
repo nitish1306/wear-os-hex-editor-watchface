@@ -10,14 +10,14 @@ function X($s){ $s -replace '&','&amp;' -replace '<','&lt;' -replace '>','&gt;' 
 L '<?xml version="1.0" encoding="utf-8"?>'
 L '<WatchFace width="480" height="480">'
 L '  <Scene backgroundColor="#FF000000">'
-$dz = '([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X])))'
-$zoomIn = "clamp($dz / 4, 0, 1)"
-$zoomOut = "clamp(-$dz / 4, 0, 1)"
+$dz = '[ACCELEROMETER_Z]'
+$zoomIn = "clamp(($dz - 3.5) / 6, 0, 1)"
+$zoomOut = "clamp((-$dz - 3.5) / 6, 0, 1)"
 L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
 L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 L '    <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">'
-L "      <Transform target=""scaleX"" value=""1 + 0.75 * $zoomIn - 0.18 * $zoomOut""><Animation duration=""0.7"" interpolation=""EASE_IN_OUT"" fps=""30"" /></Transform>"
-L "      <Transform target=""scaleY"" value=""1 + 0.50 * $zoomIn - 0.12 * $zoomOut""><Animation duration=""0.7"" interpolation=""EASE_IN_OUT"" fps=""30"" /></Transform>"
+L "      <Transform target=""scaleX"" value=""1 + 0.40 * $zoomIn - 0.12 * $zoomOut""><Animation duration=""0.7"" interpolation=""EASE_IN_OUT"" fps=""30"" /></Transform>"
+L "      <Transform target=""scaleY"" value=""1 + 0.28 * $zoomIn - 0.08 * $zoomOut""><Animation duration=""0.7"" interpolation=""EASE_IN_OUT"" fps=""30"" /></Transform>"
 L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
 L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 
