@@ -25,9 +25,9 @@ L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mod
 $occupied = @(
   @(0,0),(1,0),(2,0),          # time
   @(1,-1),(2,-1),(2,1),(1,1),  # date
-  @(-2,-1),(-1,-1),            # hr
+  @(-1,-1),(0,-1),             # hr
   @(-2,0),(-1,0),              # battery
-  @(-3,1),(-2,1),(-1,1)        # steps
+  @(-2,1),(-1,1),(0,1)         # steps
 )
 $numW=78; $numH=46; $numVInt=56
 for ($x=-4;$x -le 4;$x++){ for($y=-5;$y -le 5;$y++){
@@ -65,15 +65,15 @@ ByteSlot -left 2 -top -1 -pairExpr '([YEAR] % 100)' -lo 0 -hi 99 -res $accent -a
 ByteSlot -left 1 -top 1 -pairExpr '[DAY]' -lo 1 -hi 31 -res $accent -ambient $false
 ByteSlot -left 2 -top 1 -pairExpr '[MONTH]' -lo 1 -hi 12 -res $accent -ambient $false
 # HEART RATE: right-aligned, leading zeroes shown (67 -> 00 67, 167 -> 01 67)
-ByteSlot -left -2 -top -1 -pairExpr 'floor(round([HEART_RATE]) / 100)' -lo 0 -hi 2 -res $accent -ambient $false
-ByteSlot -left -1 -top -1 -pairExpr '(round([HEART_RATE]) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left -1 -top -1 -pairExpr 'floor(round([HEART_RATE]) / 100)' -lo 0 -hi 2 -res $accent -ambient $false
+ByteSlot -left 0 -top -1 -pairExpr '(round([HEART_RATE]) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 # BATTERY (2 decimal pairs, 00..100)
 ByteSlot -left -2 -top 0 -pairExpr 'floor([BATTERY_PERCENT] / 100)' -lo 0 -hi 1 -res $accent -ambient $false
 ByteSlot -left -1 -top 0 -pairExpr '([BATTERY_PERCENT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 # STEPS: right-aligned, leading zeroes shown (86 -> 00 00 86, 2345 -> 00 23 45, 10030 -> 01 00 30)
-ByteSlot -left -3 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -res $accent -ambient $false
-ByteSlot -left -2 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
-ByteSlot -left -1 -top 1 -pairExpr '([STEP_COUNT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left -2 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -res $accent -ambient $false
+ByteSlot -left -1 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left 0 -top 1 -pairExpr '([STEP_COUNT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 
 L '    </Group>'
 # Vignette stays fixed on screen; an extra copy darkens only when the face zooms out.
