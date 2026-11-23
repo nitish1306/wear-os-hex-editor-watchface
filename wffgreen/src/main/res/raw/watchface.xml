@@ -2,7 +2,7 @@
 <WatchFace width="480" height="480">
   <Scene backgroundColor="#FF000000">
     <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">
-      <Gyro x="clamp([ACCELEROMETER_ANGLE_Y] * 0.10, -10, 10) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" y="clamp([ACCELEROMETER_ANGLE_X] * 0.06, -6, 6) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" angle="clamp([ACCELEROMETER_ANGLE_Z] * 0.05, -4, 4) * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" scaleX="1 + 0.30 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" scaleY="1 + 0.18 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)" />
+      <Gyro scaleX="1 + 0.55 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 1.5) / 5, 0, 1)" scaleY="1 + 0.38 * clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 1.5) / 5, 0, 1)" />
     <PartImage x="-60" y="-60" width="600" height="600"><Image resource="bg_green" /></PartImage>
     <PartImage x="-60" y="-114" width="600" height="600"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="bars_green" /></PartImage>
     <PartImage x="-150" y="-64" width="78" height="46"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="d00_green" /></PartImage>

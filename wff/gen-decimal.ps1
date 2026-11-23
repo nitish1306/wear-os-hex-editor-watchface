@@ -10,9 +10,9 @@ function X($s){ $s -replace '&','&amp;' -replace '<','&lt;' -replace '>','&gt;' 
 L '<?xml version="1.0" encoding="utf-8"?>'
 L '<WatchFace width="480" height="480">'
 L '  <Scene backgroundColor="#FF000000">'
-$warp = 'clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 2.5) / 7.5, 0, 1)'
+$warp = 'clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 1.5) / 5, 0, 1)'
 L '    <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">'
-L "      <Gyro x=""clamp([ACCELEROMETER_ANGLE_Y] * 0.10, -10, 10) * $warp"" y=""clamp([ACCELEROMETER_ANGLE_X] * 0.06, -6, 6) * $warp"" angle=""clamp([ACCELEROMETER_ANGLE_Z] * 0.05, -4, 4) * $warp"" scaleX=""1 + 0.30 * $warp"" scaleY=""1 + 0.18 * $warp"" />"
+L "      <Gyro scaleX=""1 + 0.55 * $warp"" scaleY=""1 + 0.38 * $warp"" />"
 L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
 L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 
