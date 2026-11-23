@@ -44,6 +44,14 @@ function ByteSlot {
   $px=240+($left-1)*$numW+$dx; $py=240+$top*$numVInt-24+$dy
   $pe = X $pairExpr
   $vis = X $show
+  # Unused gated slots keep a 00 tile so the CRT grid never has a hole.
+  if ($show -ne '1') {
+    L "$indent<PartImage x=""$px"" y=""$py"" width=""$numW"" height=""$numH"">"
+    L "$indent  <Transform target=""alpha"" value=""(1 - ($vis)) * 255"" />"
+    L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""0"" />"
+    L "$indent  <Image resource=""d00_$res"" />"
+    L "$indent</PartImage>"
+  }
   for ($p=$lo;$p -le $hi;$p++){
     $bcd = [int]([math]::Floor($p/10)*16 + ($p%10))
     $hex = "{0:x2}" -f $bcd
@@ -66,16 +74,18 @@ ByteSlot -left 1 -top -1 -pairExpr '0' -lo 0 -hi 0 -res $accent -ambient $false
 ByteSlot -left 2 -top -1 -pairExpr '([YEAR] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 ByteSlot -left 1 -top 1 -pairExpr '[DAY]' -lo 1 -hi 31 -res $accent -ambient $false
 ByteSlot -left 2 -top 1 -pairExpr '[MONTH]' -lo 1 -hi 12 -res $accent -ambient $false
-# HEART RATE: hide the hundreds block until 100+, then split (e.g. 01 67)
-ByteSlot -left -2 -top -1 -pairExpr 'floor(round([HEART_RATE]) / 100)' -lo 0 -hi 2 -res $accent -ambient $false -show '(round([HEART_RATE]) >= 100 ? 1 : 0)'
-ByteSlot -left -1 -top -1 -pairExpr '(round([HEART_RATE]) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+# HEART RATE: left-aligned (67 -> 67 00, 167 -> 01 67)
+$hr = 'round([HEART_RATE])'
+ByteSlot -left -2 -top -1 -pairExpr "($hr >= 100 ? floor($hr / 100) : ($hr % 100))" -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left -1 -top -1 -pairExpr "($hr % 100)" -lo 0 -hi 99 -res $accent -ambient $false -show "($hr >= 100 ? 1 : 0)"
 # BATTERY (2 decimal pairs, 00..100)
 ByteSlot -left -2 -top 0 -pairExpr 'floor([BATTERY_PERCENT] / 100)' -lo 0 -hi 1 -res $accent -ambient $false
 ByteSlot -left -1 -top 0 -pairExpr '([BATTERY_PERCENT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
-# STEPS: suppress leading zero pairs (86 -> ..86, 2345 -> .23.45, 10030 -> 01.00.30)
-ByteSlot -left -3 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -res $accent -ambient $false -show '([STEP_COUNT] >= 10000 ? 1 : 0)'
-ByteSlot -left -2 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false -show '([STEP_COUNT] >= 100 ? 1 : 0)'
-ByteSlot -left -1 -top 1 -pairExpr '([STEP_COUNT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+# STEPS: left-aligned (86 -> 86 00 00, 2345 -> 23 45 00, 10030 -> 01 00 30)
+$step = '[STEP_COUNT]'
+ByteSlot -left -3 -top 1 -pairExpr "($step >= 10000 ? floor($step / 10000) : ($step >= 100 ? (floor($step / 100) % 100) : ($step % 100)))" -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left -2 -top 1 -pairExpr "($step >= 10000 ? (floor($step / 100) % 100) : ($step % 100))" -lo 0 -hi 99 -res $accent -ambient $false -show "($step >= 100 ? 1 : 0)"
+ByteSlot -left -1 -top 1 -pairExpr "($step % 100)" -lo 0 -hi 99 -res $accent -ambient $false -show "($step >= 10000 ? 1 : 0)"
 
 L '    </Group>'
 # Vignette stays fixed on screen; an extra copy darkens only when the face zooms out.
