@@ -2,7 +2,11 @@
 
 Two retro CRT / hex-editor style watch faces built with the Watch Face Format.
 
-![Blue CRT](screenshot-current-face.png)
+## Preview
+
+![Green Hex watch face on Pixel Watch 4](screenshot-current-face.png)
+
+*Current Green Hex face captured on a Pixel Watch 4.*
 
 ## Features
 
