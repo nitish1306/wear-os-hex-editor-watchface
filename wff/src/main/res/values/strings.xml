@@ -1,13 +1,3 @@
 <resources>
     <string name="app_name">Blue CRT</string>
-    <string name="cfg_time">Time</string>
-    <string name="cfg_date">Date</string>
-    <string name="cfg_hr">Heart rate</string>
-    <string name="cfg_steps">Steps</string>
-    <string name="cfg_battery">Battery</string>
-    <string name="cfg_endian">Byte order</string>
-    <string name="opt_hex">Hexadecimal</string>
-    <string name="opt_dec">Decimal</string>
-    <string name="opt_little">Little endian</string>
-    <string name="opt_big">Big endian</string>
 </resources>

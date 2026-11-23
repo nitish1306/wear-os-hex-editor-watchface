@@ -12,7 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HEX Editor Watchface"
-include ':app'
+rootProject.name = "CRT Watch Faces"
 include ':wff'
 include ':wffgreen'

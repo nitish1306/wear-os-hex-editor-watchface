@@ -90,4 +90,5 @@ lint/tmp/
 # Kotlin / debug artifacts
 .kotlin/
 screenshot*.png
+!screenshot-current-face.png
 
