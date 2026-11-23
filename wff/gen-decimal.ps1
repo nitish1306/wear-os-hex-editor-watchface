@@ -11,8 +11,11 @@ L '<?xml version="1.0" encoding="utf-8"?>'
 L '<WatchFace width="480" height="480">'
 L '  <Scene backgroundColor="#FF000000">'
 $dz = '[ACCELEROMETER_Z]'
-$zoomIn = "clamp(($dz - 3.5) / 6, 0, 1)"
-$zoomOut = "clamp((-$dz - 3.5) / 6, 0, 1)"
+# Gravity magnitude is ~9.8 in any orientation; only enable zoom while it deviates.
+$jerk = 'abs(sqrt([ACCELEROMETER_X] * [ACCELEROMETER_X] + [ACCELEROMETER_Y] * [ACCELEROMETER_Y] + [ACCELEROMETER_Z] * [ACCELEROMETER_Z]) - 9.8)'
+$gate = "clamp(($jerk - 1.2) / 3, 0, 1)"
+$zoomIn = "clamp(($dz - 3.5) / 6, 0, 1) * $gate"
+$zoomOut = "clamp((-$dz - 3.5) / 6, 0, 1) * $gate"
 L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
 L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 L '    <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">'
