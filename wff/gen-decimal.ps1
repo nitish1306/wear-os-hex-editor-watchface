@@ -40,15 +40,17 @@ for ($x=-4;$x -le 4;$x++){ for($y=-5;$y -le 5;$y++){
 
 # One byte tile showing a decimal pair (00..99) via BCD-encoded dXX image.
 function ByteSlot {
-  param([int]$left,[int]$top,[string]$pairExpr,[int]$lo,[int]$hi,[string]$res,[bool]$ambient,[int]$dx=0,[int]$dy=0,[string]$indent='    ')
+  param([int]$left,[int]$top,[string]$pairExpr,[int]$lo,[int]$hi,[string]$res,[bool]$ambient,[int]$dx=0,[int]$dy=0,[string]$indent='    ',[string]$show='1')
   $px=240+($left-1)*$numW+$dx; $py=240+$top*$numVInt-24+$dy
   $pe = X $pairExpr
+  $vis = X $show
   for ($p=$lo;$p -le $hi;$p++){
     $bcd = [int]([math]::Floor($p/10)*16 + ($p%10))
     $hex = "{0:x2}" -f $bcd
+    $alpha = "($vis) * ($pe == $p ? 255 : 0)"
     L "$indent<PartImage x=""$px"" y=""$py"" width=""$numW"" height=""$numH"">"
-    L "$indent  <Transform target=""alpha"" value=""$pe == $p ? 255 : 0"" />"
-    if ($ambient) { L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""$pe == $p ? 255 : 0"" />" }
+    L "$indent  <Transform target=""alpha"" value=""$alpha"" />"
+    if ($ambient) { L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""$alpha"" />" }
     else { L "$indent  <Variant mode=""AMBIENT"" target=""alpha"" value=""0"" />" }
     L "$indent  <Image resource=""d${hex}_$res"" />"
     L "$indent</PartImage>"
@@ -59,20 +61,20 @@ function ByteSlot {
 ByteSlot -left 0 -top 0 -pairExpr '[HOUR_0_23]' -lo 0 -hi 23 -res $time -ambient $true
 ByteSlot -left 1 -top 0 -pairExpr '[MINUTE]' -lo 0 -hi 59 -res $time -ambient $true
 ByteSlot -left 2 -top 0 -pairExpr '[SECOND]' -lo 0 -hi 59 -res $accent -ambient $false
-# DATE (YY MM DD + day-of-week)
-ByteSlot -left 1 -top -1 -pairExpr '([YEAR] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
-ByteSlot -left 2 -top -1 -pairExpr '[MONTH]' -lo 1 -hi 12 -res $accent -ambient $false
-ByteSlot -left 2 -top 1 -pairExpr '[DAY]' -lo 1 -hi 31 -res $accent -ambient $false
-ByteSlot -left 1 -top 1 -pairExpr '[DAY_OF_WEEK]' -lo 1 -hi 7 -res $accent -ambient $false
-# HEART RATE (2 decimal pairs)
-ByteSlot -left -2 -top -1 -pairExpr 'floor(round([HEART_RATE]) / 100)' -lo 0 -hi 2 -res $accent -ambient $false
+# DATE: 00 YY / DD MM (values shifted one slot from the original layout)
+ByteSlot -left 1 -top -1 -pairExpr '0' -lo 0 -hi 0 -res $accent -ambient $false
+ByteSlot -left 2 -top -1 -pairExpr '([YEAR] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+ByteSlot -left 1 -top 1 -pairExpr '[DAY]' -lo 1 -hi 31 -res $accent -ambient $false
+ByteSlot -left 2 -top 1 -pairExpr '[MONTH]' -lo 1 -hi 12 -res $accent -ambient $false
+# HEART RATE: hide the hundreds block until 100+, then split (e.g. 01 67)
+ByteSlot -left -2 -top -1 -pairExpr 'floor(round([HEART_RATE]) / 100)' -lo 0 -hi 2 -res $accent -ambient $false -show '(round([HEART_RATE]) >= 100 ? 1 : 0)'
 ByteSlot -left -1 -top -1 -pairExpr '(round([HEART_RATE]) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 # BATTERY (2 decimal pairs, 00..100)
 ByteSlot -left -2 -top 0 -pairExpr 'floor([BATTERY_PERCENT] / 100)' -lo 0 -hi 1 -res $accent -ambient $false
 ByteSlot -left -1 -top 0 -pairExpr '([BATTERY_PERCENT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
-# STEPS (3 decimal pairs, 000000..999999)
-ByteSlot -left -3 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -res $accent -ambient $false
-ByteSlot -left -2 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
+# STEPS: suppress leading zero pairs (86 -> ..86, 2345 -> .23.45, 10030 -> 01.00.30)
+ByteSlot -left -3 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -res $accent -ambient $false -show '([STEP_COUNT] >= 10000 ? 1 : 0)'
+ByteSlot -left -2 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false -show '([STEP_COUNT] >= 100 ? 1 : 0)'
 ByteSlot -left -1 -top 1 -pairExpr '([STEP_COUNT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 
 L '    </Group>'
