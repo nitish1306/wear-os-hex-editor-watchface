@@ -10,9 +10,13 @@ function X($s){ $s -replace '&','&amp;' -replace '<','&lt;' -replace '>','&gt;' 
 L '<?xml version="1.0" encoding="utf-8"?>'
 L '<WatchFace width="480" height="480">'
 L '  <Scene backgroundColor="#FF000000">'
-$warp = 'clamp((abs([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X]))) - 1.5) / 5, 0, 1)'
+$dz = '([ACCELEROMETER_Z] + 9.8 * cos(rad([ACCELEROMETER_ANGLE_X])))'
+$zoomIn = "clamp($dz / 5, 0, 1)"
+$zoomOut = "clamp(-$dz / 5, 0, 1)"
+L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
+L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 L '    <Group name="face_warp" x="0" y="0" width="480" height="480" pivotX="0.5" pivotY="0.5">'
-L "      <Gyro scaleX=""1 + 0.55 * $warp"" scaleY=""1 + 0.38 * $warp"" />"
+L "      <Gyro scaleX=""1 + 0.55 * $zoomIn - 0.12 * $zoomOut"" scaleY=""1 + 0.38 * $zoomIn - 0.08 * $zoomOut"" />"
 L "    <PartImage x=""-60"" y=""-60"" width=""600"" height=""600""><Image resource=""$bg"" /></PartImage>"
 L "    <PartImage x=""-60"" y=""-114"" width=""600"" height=""600""><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""$bars"" /></PartImage>"
 
@@ -70,8 +74,10 @@ ByteSlot -left -3 -top 1 -pairExpr 'floor([STEP_COUNT] / 10000)' -lo 0 -hi 9 -re
 ByteSlot -left -2 -top 1 -pairExpr '(floor([STEP_COUNT] / 100) % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 ByteSlot -left -1 -top 1 -pairExpr '([STEP_COUNT] % 100)' -lo 0 -hi 99 -res $accent -ambient $false
 
-L '    <PartImage x="-10" y="-10" width="500" height="500"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="vignetting_strong" /></PartImage>'
 L '    </Group>'
+# Vignette stays fixed on screen; an extra copy darkens only when the face zooms out.
+L '    <PartImage x="-10" y="-10" width="500" height="500"><Variant mode="AMBIENT" target="alpha" value="0" /><Image resource="vignetting_strong" /></PartImage>'
+L "    <PartImage x=""-10"" y=""-10"" width=""500"" height=""500""><Transform target=""alpha"" value=""255 * $zoomOut"" /><Variant mode=""AMBIENT"" target=""alpha"" value=""0"" /><Image resource=""vignetting_strong"" /></PartImage>"
 L '  </Scene>'
 L '</WatchFace>'
 
